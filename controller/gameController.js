@@ -1,14 +1,14 @@
 function initializeGame(req, res) {
   res.render("index");
 }
-function handleCardClick(req, res) {
-  const { cardId } = req.params;
+// function handleCardClick(req, res) {
+//   const { cardId } = req.params;
 
-  console.log(cardArr[cardId]);
+//   console.log(cardArr[cardId]);
 
-  //cardArr[Number(cardId)].state = "f";
+//   //cardArr[Number(cardId)].state = "f";
 
-  //res.redirect("/");
-}
+//   //res.redirect("/");
+// }
 
-module.exports = { initializeGame, handleCardClick };
+module.exports = { initializeGame };
