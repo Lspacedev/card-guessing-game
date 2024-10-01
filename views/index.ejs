@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Card flipping</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <ul class="cards">
+      <% if(cards.length > 0) { %> <% cards.forEach((card, i) => { %>
+      <li class="<%= card.state == 'f' ? 'card flipped' : 'card' %>">
+        <a href="/<%= i %>">
+          <div class="front"></div>
+          <div class="back"><%= card.letter %></div>
+        </a>
+      </li>
+      <% }); %> <% } %>
+    </ul>
+  </body>
+</html>
