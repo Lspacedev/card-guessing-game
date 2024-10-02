@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.container {
+body {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,15 +20,24 @@ body {
   padding: 15px 0px;
 }
 
+.timer {
+  display: flex;
+  margin: 5px;
+}
+h4 {
+  margin: 0px;
+}
+.logo-reset {
+  width: 100w;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
 .logo {
   font-size: 2.3rem;
   font-family: system-ui, "Helvetica Neue", sans-serif;
-}
-
-.score-board {
-  display: flex;
-  gap: 5px;
-  font-size: 1.5rem;
+  margin: 10px;
 }
 
 .reset-btn {
@@ -37,20 +46,21 @@ body {
   background-color: black;
   color: white;
 
-  padding: 15px 30px;
+  padding: 5px 30px;
 
   border: none;
 }
 
 .reset-btn:hover {
-  background-color: #f45b69;
+  background-color: #cc7b1f;
   color: white;
+  cursor: pointer;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 120px);
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(6, 120px);
 
   gap: 25px 50px;
 }
