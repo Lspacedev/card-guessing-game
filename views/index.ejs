@@ -4,23 +4,25 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="header">Memory Game</div>
+    <div class="logo-reset">
+      <div class="logo">Memory Game</div>
+      <a href="/reset-game"> <button class="reset-btn">Reset</button></a>
+    </div>
+    <h4>Time:</h4>
     <div class="timer">
-      <div class="hours">0 hr</div>
-      <div class="minutes">0 min</div>
-      <div class="seconds">0 sec</div>
+      <div class="hours">00</div>
+      <div>:</div>
+      <div class="minutes">00</div>
+      <div>:</div>
+      <div class="seconds">00</div>
     </div>
-    <div class="score-board">
-      <p>Score:</p>
-      <p class="score"></p>
-    </div>
-    <a href="/reset-game"> <button class="reset-btn">Reset</button></a>
+
     <ul class="cards">
       <% if(cards.length > 0) { %> <% cards.forEach((card, i) => { %>
       <div class="card" id="<%= i %>">
         <div class="card-container">
           <div class="front"></div>
-          <div class="back"><%= card.letter %></div>
+          <div class="back"><%= card %></div>
         </div>
       </div>
       <% }); %> <% } %>

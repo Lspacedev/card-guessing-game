@@ -4,10 +4,9 @@ const gameController = require("../controller/gameController");
 
 gameRouter.get("/", gameController.initializeGame);
 gameRouter.get("/reset-game", gameController.resetGame);
-gameRouter.get("/scores", gameController.getNickname);
 
-gameRouter.post("/score", gameController.handleScore);
-
-//gameRouter.get("/:cardId", gameController.handleCardClick);
+gameRouter.get("/score", gameController.getScore);
+gameRouter.post("/score", gameController.postScore);
+gameRouter.get("/scores", gameController.getHighest);
 
 module.exports = gameRouter;
