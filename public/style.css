@@ -108,3 +108,13 @@ h4 {
   box-shadow: 1px 1px 5px black;
   transform: rotateY(180deg);
 }
+
+.scores {
+  background-color: whitesmoke;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-family: monospace;
+}
+.scores div {
+  margin: 5px;
+}
